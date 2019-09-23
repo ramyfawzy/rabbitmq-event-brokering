@@ -8,6 +8,9 @@ For further reference, please consider the following sections:
 
 
 mvn -X spring-boot:run -Dspring-boot.run.arguments=--spring.profiles.active=subscriber,--subscriber.queue=service1Queue,--subscriber.routingKey=customer.*
+
+
 mvn -X spring-boot:run -Dspring-boot.run.arguments=--spring.profiles.active=subscriber,--subscriber.queue=service2Queue,--subscriber.routingKey=*.created
+
 
 mvn -X spring-boot:run -Dspring-boot.run.arguments=--spring.profiles.active=publisher
